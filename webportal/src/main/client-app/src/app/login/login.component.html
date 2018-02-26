@@ -1,0 +1,22 @@
+<div class="row top-filler">
+
+</div>
+<div class="row">
+  <div class="col-md-4">
+
+  </div>
+  <div class="col-md-4" >
+      <form [formGroup]="form" (ngSubmit)="add(form.value)" class="login-container">
+        <mat-form-field>
+          <input matInput placeholder="Username" formControlName=title>
+        </mat-form-field>
+        <mat-form-field>
+          <input type="password" matInput placeholder="Password" formControlName="description">
+        </mat-form-field>
+        <button class="login-button" mat-button type="submit" mat-raised-button color="primary">Login</button>
+      </form>
+  </div>
+  <div class="col-md-4">
+
+  </div>
+</div>

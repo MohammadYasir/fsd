@@ -1,0 +1,4 @@
+/* Importing the angular material themes */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+/* Importing bootstrap for layout purpose*/
+@import './assets/bootstrap.min.css';

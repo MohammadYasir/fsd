@@ -1,0 +1,6 @@
+server:
+  port: 8899
+  contextPath: /oauthserver
+logging:
+  level:
+    org.springframework.security: DEBUG

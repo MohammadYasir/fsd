@@ -1,0 +1,15 @@
+.login-container{
+  display: block;
+}
+
+.login-container > * {
+  width: 100%;
+}
+
+.top-filler{
+  height: 100px;
+}
+
+.login-button{
+  margin-top: 20px;
+}

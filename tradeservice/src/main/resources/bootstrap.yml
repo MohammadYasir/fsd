@@ -1,0 +1,8 @@
+## YAML Template.
+spring:
+    application:
+        name: trade-service
+    cloud:
+        config:
+            uri: http://localhost:7800
+---

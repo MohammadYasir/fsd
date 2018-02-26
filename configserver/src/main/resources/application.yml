@@ -1,0 +1,11 @@
+## YAML Template.
+spring:
+    cloud:
+        config:
+            server:
+                git:
+                    uri: file://D:/Self_learning/confighost
+        
+server:
+  port: 7800                    
+---

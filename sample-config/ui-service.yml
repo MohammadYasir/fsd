@@ -1,10 +1,5 @@
 server:
-  port: 8100
-
-security:
-  user:
-    name:yasir
-    password:abcd
+  port: 8200
   
 eureka:
     client:

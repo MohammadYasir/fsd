@@ -1,0 +1,37 @@
+## YAML Template.
+server:
+    port: 8000
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:7900/eureka
+            
+zuul:
+    ignoredServices: '*'
+    routes:
+        oauth-server:
+            path: /auth/**
+            stripPrefix: true
+            serviceId: oauth-server
+            sensitiveHeaders:
+        trade-service:
+            path: /trade/**
+            stripPrefix: true
+            serviceId: trade-service
+            sensitiveHeaders:
+        notify-service:
+            path: /notify/**
+            stripPrefix: true
+            serviceId: notify-service
+            sensitiveHeaders:
+        refdata-service:
+            path: /refdata/**
+            stripPrefix: true
+            serviceId: refdata-service
+            sensitiveHeaders:
+        ui-service:
+            path: /**
+            stripPrefix: true
+            serviceId: ui-service
+            sensitiveHeaders:
+---

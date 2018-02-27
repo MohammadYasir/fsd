@@ -1,0 +1,13 @@
+## YAML Template.
+server:
+    port: 7900
+eureka:
+    instance:
+        hostname: localhost
+        leaseRenewalIntervalInSeconds: 5
+    client:
+        registerWithEureka: false
+        fetchRegistry: false
+        serviceUrl:
+            defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+---
